@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+  font-family: "Garamond", sans-serif;
+
+  background-image: url("SUB1.JPG");
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p1 {
+  font-family: "Garamond", Times, serif; font-size: 20px;
+}
+
+mark { 
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+.active {
+  background-color: rgb(0, 158, 250);
+  color: rgb(0, 0, 0);
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a .closebtn {
+  position: sticky;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 1px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card 
+{
+  background-color: #dac2a5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  border: 7px solid #C7AD7F;
+  padding: 20px; 
+  width: 250px;
+  height: 510px;  
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  
+  <a href="Main Page.html">Home</a>
+  <button class="dropdown-btn"><p class="p1">What are Webcasts?</p>
+    
+  </button>
+  <div class="dropdown-container">
+    <a href="Chosen Streaming Content.html">Chosen Streaming Content</a>
+    <a href="Platforms used for Chosen Streaming Content.html">Platforms used for Chosen Streaming Content</a>
+    <a href="Characteristics of a good stream.html">Characteristics of a good stream</a>
+    <a href="Basic Webcasting.html">Basic Webcasting</a>
+    <a href="Managed Webcasting.html">Managed Webcasting</a>
+  </div>
+  
+  
+  <a href="References.html">References</a>
+  <a href="ABOUTUS.html">About</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Back</a>
+  </div>
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+      
+ <h2><mark>&#160;&#160;What are Webcasts?: Chosen Streaming Content&#160;&#160;</mark></h2>
+<br>
+<div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Definition -</h2>
+        <p>We use the term webcast to refer to a live video stream of an event or conference. Essentially, webcasts are polished, high-quality videos that bring your event to life on the internet. Those TED talks that are live streamed across the world? Those are webcasts. Web + broadcast = webcast. It’s as simple as that. Webcasts can be streamed live or on-demand and require your audience to tune in, watch your webcast video stream, and engage by submitting questions and participating in polls.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>How it works -</h2>
+        <p> A webcast works by using broadcasting hardware (this can be a single computer or a collection of servers) to process the data being broadcast. Then a software solution or platform, like WorkCast, ensures the audience can access the webcast. The hardware and software work together to send a virtual channel to attendees, which they access via the internet on the device of their choosing. </p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Usage - </h2>
+        <p>Webcasting is used extensively in the commercial sector for investor relations presentations (such as annual general meetings), in e-learning (to transmit seminars), and for related communications activities. However, webcasting does not bear much, if any, relationship to web conferencing, which is designed for many-to-many interaction.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+
+
+    </script>
+
+</body>
+</html>
